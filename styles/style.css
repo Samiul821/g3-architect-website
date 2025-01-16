@@ -1,3 +1,49 @@
 .fonts{
     font-family: Work Sans;
 }
+/* shared styles */
+.display-flex{
+    display: flex;
+}
+
+/* drak-02 */
+.text-gray{
+    color: #424242;
+}
+
+/* drak-03 */
+.text-light-gray{
+    color: #727272;
+}
+.bg-light{
+    background-color: rgba(255, 144, 14, 0.1);
+}
+/* header styles */
+
+/* nav bar related styles */
+.nav-bar{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand{
+    color: #131313;
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+
+.nav-item{
+    list-style: none;
+    margin-left: 40px;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500px;
+}
+
+.nav-bar, .banner{
+    max-width: 1440px;
+    margin: 0 auto;
+}
