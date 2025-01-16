@@ -18,6 +18,16 @@
 .bg-light{
     background-color: rgba(255, 144, 14, 0.1);
 }
+
+.btn-praimary{
+    background-color: #FF900E;
+    padding: 20px 25px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
 /* header styles */
 
 /* nav bar related styles */
@@ -47,3 +57,22 @@
     max-width: 1440px;
     margin: 0 auto;
 }
+/* banner related style */
+.banner-content{
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.banner-title{
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.banner-description{
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 32px;
+}
+
