@@ -131,6 +131,7 @@ main{
 .facts-container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 170px;
 }
 
 .fact-card{
@@ -159,6 +160,7 @@ main{
 
 .fact-description{
     max-width: 540px;
+    margin-bottom: 100px;
 }
 
 /* responsiv-media-query */
@@ -169,10 +171,14 @@ main{
         flex-direction: column;
     }
 
-    .team-img-container{
-        grid-template-columns: repeat(1, 1fr);
+    .team-img-container, .facts-container{
+        grid-template-columns: 1fr;
     }
 
+    .facts-container{
+        justify-items: center;
+        gap: 24px;
+    }
     .our-features{
         margin-left: 20px;
     }
