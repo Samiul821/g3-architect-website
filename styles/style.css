@@ -163,6 +163,23 @@ main{
     margin-bottom: 100px;
 }
 
+/* sponspors related styles */
+.sponspors-info{
+    max-width: 542px;
+    margin: 0 auto 50px auto;
+    text-align: center;
+}
+
+.sponspors-compaines{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-bottom: 130px;
+}
+
+.sponspors-compaines img{
+    filter: grayscale(100%);
+}
+
 /* responsiv-media-query */
 @media screen and (max-width:576px) {
     .nav-bar, 
@@ -171,11 +188,14 @@ main{
         flex-direction: column;
     }
 
-    .team-img-container, .facts-container{
+    .team-img-container, 
+    .facts-container, 
+    .sponspors-compaines{
         grid-template-columns: 1fr;
     }
 
-    .facts-container{
+    .facts-container, 
+    .sponspors-compaines{
         justify-items: center;
         gap: 24px;
     }
@@ -192,5 +212,11 @@ main{
 
     .our-features{
         margin: 50px auto;
+    }
+
+    .sponspors-compaines, .facts-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+        justify-items: center;
     }
 }
