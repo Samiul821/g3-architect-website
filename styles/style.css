@@ -15,6 +15,11 @@
 .text-light-gray{
     color: #727272;
 }
+
+.text-praimary{
+    color: #FF900E;
+}
+
 .bg-light{
     background-color: rgba(255, 144, 14, 0.1);
 }
@@ -115,9 +120,6 @@ main{
     font-weight: 500;
 }
 
-#features{
-    color: #FF900E;
-}
 
 .features-description{
     font-size: 16px;
@@ -127,7 +129,28 @@ main{
 
 /* responsiv-media-query */
 @media screen and (max-width:576px) {
-    .nav-bar, .nav-links{
+    .nav-bar, 
+    .nav-links, 
+    .teams{
         flex-direction: column;
+    }
+
+    .team-img-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .our-features{
+        margin-left: 20px;
+    }
+}
+
+/* medium size device */
+@media screen and (min-width:576px) and (max-width:992px) {
+    .teams{
+        flex-direction: column;
+    }
+
+    .our-features{
+        margin: 50px auto;
     }
 }
